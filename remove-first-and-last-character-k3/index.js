@@ -3,5 +3,21 @@
 
 //My solution
 function removeChar(str) {
-  //You got this!
+  const partString = str.slice(1, -1);
+  console.log(
+    'The first and last characters were removed from the original string. Result: ',
+    partString
+  );
+  return partString;
 }
+
+//Other solution
+// const removeChar = (str) => str.slice(1, -1);
+
+//Other solution
+// function removeChar(str) {
+//   console.log(`Cut down text: ${str.substring(1, str.length - 1)}`);
+//   return str.substring(1, str.length - 1);
+// }
+
+removeChar('country');
