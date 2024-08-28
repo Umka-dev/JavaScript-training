@@ -8,7 +8,29 @@
 // "-7" --> -7
 
 //My solution
+// const stringToNumber = function (str) {
+//   numberFromString = Number(str);
+//   console.log('Type of input data: ', typeof str);
+//   console.log('Type of output data: ', typeof numberFromString);
+//   console.log('Number from string: ', numberFromString);
+//   return numberFromString;
+// };
+
+//Other solution
+// const stringToNumber = function (str) {
+//   numberFromString = parseInt(str);
+//   console.log('Type of input data: ', typeof str);
+//   console.log('Type of output data: ', typeof numberFromString);
+//   console.log('Number from string: ', numberFromString);
+//   return numberFromString;
+// };
+
+//Better solution
 const stringToNumber = function (str) {
-  // put your code here
-  return null;
+  console.log('Type of input data: ', typeof str);
+  console.log('Type of output data: ', typeof +str);
+  console.log('Number from string: ', +str);
+  return +str;
 };
+
+stringToNumber('1234');
