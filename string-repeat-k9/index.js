@@ -7,5 +7,17 @@
 
 //My solution
 function repeatStr(n, s) {
-  return '';
+  const repeatedStr = s.repeat(n);
+  console.log('Type of output data: ', typeof repeatedStr);
+  console.log(`String ${s} repeated ${n} times: `, repeatedStr);
+  return repeatedStr;
 }
+
+repeatStr(5, 'ha ');
+
+//Other solution
+// function repeatStr(n, s) {
+//   let str = '';
+//   for (var i = 0; i < n; i++) str += s;
+//   return str;
+// }
