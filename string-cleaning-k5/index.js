@@ -7,6 +7,17 @@
 // Your harried co-workers are looking to you for a solution to take this garbled text and remove all of the numbers. Your program will take in a string and clean out all numeric characters, and return a string with spacing and special characters ~#$%^&!@*():;"'.,? all intact.
 
 //My solution
-function stringClean(s) {
-  // Function will return the cleaned string
+function stringClean(str) {
+  const clearedStr = str.replace(/\d/g, '');
+  console.log('Cleared text: ', clearedStr);
+  return clearedStr;
 }
+
+//Other solution
+// function stringClean(str) {
+//   const clearedStr = str.replace(/[0-9]/g, '');
+//   console.log('Cleared text: ', clearedStr);
+//   return clearedStr;
+// }
+
+stringClean("Wh7y can't we3 bu1y the goo0d software3? #cheapskates3");
