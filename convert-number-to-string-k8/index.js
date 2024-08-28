@@ -8,7 +8,24 @@
 
 //My solution
 function numberToString(num) {
-  // Return a string of the number here!
+  const strFromNum = num.toString();
+  console.log('Type of input data: ', typeof num);
+  console.log('Type of output data: ', typeof strFromNum);
+  console.log('String from number: ', strFromNum);
+  return strFromNum;
 }
 
-numberToString(123);
+numberToString(-123.99);
+
+//Other solution
+// function numberToString(num) {
+//     return String(num);
+//   }
+
+//Other solution
+// function numberToString(num) {
+//     return ''+num;
+//   }
+
+//Other solution
+// const numberToString = (num) => `${num}`;
