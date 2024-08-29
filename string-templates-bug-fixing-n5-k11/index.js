@@ -3,5 +3,9 @@
 
 // My solution
 function buildString(...template) {
-  return `I like #{template.join(',')}!`;
+  const correctString = `I like ${template.join(', ')}!`;
+  console.log('Correct string is: ', correctString);
+  return correctString;
 }
+
+buildString('Cheese', 'Milk', 'Chocolate');
