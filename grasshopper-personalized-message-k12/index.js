@@ -8,5 +8,22 @@
 
 //My solution
 function greet(name, owner) {
-  // Add code here
+  if (name === owner) {
+    console.log(`Hello boss`);
+    return `Hello boss`;
+  }
+  console.log(`Hello guest`);
+  return `Hello guest`;
 }
+
+greet('Simone', 'Daniel');
+
+// Other solution
+// function greet (name, owner) {
+//     return name === owner ? 'Hello boss' : 	'Hello guest';
+//   }
+
+// Other solution
+// function greet (name, owner) {
+//     return `Hello ${name==owner?'boss':'guest'}`
+//   }
