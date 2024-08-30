@@ -7,6 +7,19 @@
 // 0 => [0]
 
 //My solution
-function digitize(n) {
-  //code here
+function digitize(num) {
+  const arrOfDigits = Array.from(String(num))
+    .map((n) => +n)
+    .reverse();
+  console.log(arrOfDigits);
+  return arrOfDigits;
 }
+
+//Other solution
+// function digitize(num) {
+//   const arrOfDigits = Array.from(String(num), Number).reverse();
+//   console.log(arrOfDigits);
+//   return arrOfDigits;
+// }
+
+digitize(35231);
