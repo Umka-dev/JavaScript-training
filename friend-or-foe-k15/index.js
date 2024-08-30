@@ -13,5 +13,10 @@
 
 //My solution
 function friend(friends) {
-  //your code here
+  const friendsList = friends.filter((name) => name.length === 4);
+
+  console.log('Friends list: ', friendsList);
+  return friendsList;
 }
+
+friend(['Love', 'Your', 'Face', '1']);
