@@ -15,3 +15,21 @@
 // However, the arrays can have varying lengths, not just limited to 4.
 
 //My solution
+const binaryArrayToNumber = (arr) => {
+  arr = [1, 1, 1, 1];
+
+  function changeElement(x, index, array) {
+    const n = array.length - 1 - index;
+    const newX = x * 2 ** n;
+    console.log('x:', x, 'n:', n, 'newX:', newX);
+    return newX;
+  }
+
+  const newArr = arr.map(changeElement);
+  const num = newArr.reduce((a, b) => a + b, 0);
+  console.log('New array: ', newArr);
+  console.log('Number: ', num);
+  return num;
+};
+
+binaryArrayToNumber();
