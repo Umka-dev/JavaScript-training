@@ -72,6 +72,12 @@ function removeSmallest(numbers) {
   numbers = numbers.slice(0);
   console.log('Copy array: ', numbers);
 
+  // numbers.splice(2, 1);
+  // console.log('Array with deleted 2d element ', numbers);
+
+  // let cuttedArr = [...numbers.slice(0, -1)];
+  // console.log('Array without last element ', cuttedArr);
+
   // Find the smallest value in the array
   const min = Math.min(...numbers);
   console.log('The smallest number in the array is: ', min);
