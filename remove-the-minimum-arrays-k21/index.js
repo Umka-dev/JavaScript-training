@@ -13,6 +13,54 @@
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
 //My solution
+// function removeSmallest(numbers) {
+//   console.log('Original array: ', numbers);
+//   const smallest = Math.min(...numbers);
+
+//   indexOfFirstSmallest = numbers.findIndex((e) => e === smallest);
+//   console.log(
+//     'Index of the first smallest number in original array is: ',
+//     indexOfFirstSmallest
+//   );
+
+//   numbers.splice(indexOfFirstSmallest, 1);
+//   console.log('Array filtered from the first smallest number: ', numbers);
+//   return numbers;
+// }
+
+// removeSmallest([2, 2, 1, 2, 1]);
+
+//Other solution
+// function removeFirstSmallest(numbers) {
+//   //Find index of the first smallest number in the array
+//   const minIndex = numbers.findIndex((num) => num === Math.min(...numbers));
+
+//   // Create a new array deleting the first finded smallest element
+//   newArray = [...numbers.slice(0, minIndex), ...numbers.slice(minIndex + 1)];
+//   console.log('Array filtered from the first smallest number: ', newArray);
+//   return newArray;
+// }
+// removeFirstSmallest([2, 2, 1, 2, 1]);
+
+//Other solution
 function removeSmallest(numbers) {
-  return [];
+  // Create a copy of the array so as not to change the original
+  numbers = numbers.slice(0);
+  console.log('Copy array: ', numbers);
+
+  // Find the smallest value in the array
+  const min = Math.min(...numbers);
+  console.log('The smallest number in the array is: ', min);
+
+  // Find the index of the first occurrence of the smallest value
+  const index = numbers.indexOf(min);
+  console.log('Index of the first smallest number in the array is: ', index);
+
+  // Remove the element at the found index
+  numbers.splice(index, 1);
+
+  console.log('Array filtered from the first smallest number: ', numbers);
+  return numbers;
 }
+
+removeSmallest([2, 2, 1, 2, 1]);
