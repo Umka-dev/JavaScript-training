@@ -15,6 +15,30 @@
 //My solution
 // function removeSmallest(numbers) {
 //   console.log('Original array: ', numbers);
+//   copyArray = [...numbers];
+//   console.log('Copy array: ', copyArray);
+//   const sortedArray = copyArray.sort((a, b) => a - b);
+//   console.log('Sorted array: ', sortedArray);
+
+//   smallestNumber = sortedArray[0];
+//   console.log('Smallest number is: ', smallestNumber);
+
+//   indexOfSmallestNumber = numbers.findIndex((e) => e === sortedArray[0]);
+//   console.log(
+//     'Index of the smallest number in original array is: ',
+//     indexOfSmallestNumber
+//   );
+
+//   numbers.splice(indexOfSmallestNumber, 1);
+//   console.log('Array filtered from the first smallest number: ', numbers);
+//   return numbers;
+// }
+
+// removeSmallest([2, 2, 1, 2, 1]);
+
+//Other solution
+// function removeSmallest(numbers) {
+//   console.log('Original array: ', numbers);
 //   const smallest = Math.min(...numbers);
 
 //   indexOfFirstSmallest = numbers.findIndex((e) => e === smallest);
